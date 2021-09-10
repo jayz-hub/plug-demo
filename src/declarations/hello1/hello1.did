@@ -1,0 +1,6 @@
+type FileId = text;
+type Chunk = vec nat8;
+service : {
+  getFile: (FileId) -> (opt Chunk);
+  uplodaFile: (FileId, Chunk) -> ();
+}
